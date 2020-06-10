@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--space-md);
+    margin: 0 auto;
+    max-width: 80vw;
+    color: white;
+    position: sticky;
+
+}
+
+.nav-links {
+    display: flex;
+    margin: 0 -10px;
+
+    li>* {
+        margin: 0 10px;
+    }
+}
