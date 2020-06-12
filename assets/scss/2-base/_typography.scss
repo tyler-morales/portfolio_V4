@@ -3,7 +3,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span,
+footer {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -40,4 +42,9 @@ h6 {
 p {
     font-size: 21px;
     font-weight: 400;
+}
+
+.project-type {
+    color: var(--color-tertiary);
+    font-size: 14px;
 }
