@@ -1,0 +1,38 @@
+.link {
+    cursor: pointer;
+    width: max-content;
+
+    &--view-project {
+        @extend .link;
+        color: var(--color-link);
+        font-size: 17px;
+    }
+}
+
+.icon{
+    cursor: pointer;
+    display: block;
+}
+.icon--social {
+    @extend .icon;
+    height: 48px;
+    width: 48px;
+
+    
+    
+}
+
+.external-link-icon {
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    top: 17px;
+    right: 17px;
+    fill:  #8bc34a;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        fill: blue;
+    }
+}
