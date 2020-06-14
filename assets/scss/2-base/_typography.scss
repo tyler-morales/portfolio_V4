@@ -31,7 +31,7 @@ h2 {
     @include breakpoint(sm) {
         font-size: 36px;
         line-height: 35px;
-        margin-bottom: 0;
+        // margin-bottom: 0;
     }
 }
 
@@ -80,7 +80,8 @@ p {
     line-height: 39px;
 
     @include breakpoint(sm) {
-        line-height: 26px;
+        font-size: 17px;
+        line-height: 34px;
     }
 }
 
