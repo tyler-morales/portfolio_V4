@@ -1,19 +1,47 @@
-nav {
+.nav {
     display: flex;
-    justify-content: space-between;
-    padding-top: var(--space-md);
-    margin: 0 auto;
-    max-width: 80vw;
-    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 0;
+    color: #fff;
     position: sticky;
+    background-color: slategray;
+    margin-bottom: 85px;
+    font-size: 19px;
+    transition: all .3s;
+    z-index: 10;
 
-}
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
 
-.nav-links {
-    display: flex;
-    margin: 0 -10px;
+    @include breakpoint(sm) {
+        margin-bottom: 0;
+    }
 
-    li>* {
-        margin: 0 10px;
+    &__name {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+        border: 1px solid white;
+        padding: 5px 15px;
+        transition: all .3s;
+        &:hover{
+            color: slategray;
+            background-color: #fff;
+        }
+
+        .sub-title {
+            font-size: 12px;
+        }
+    }
+
+    &__about {
+        order: 3
+    }
+
+    &__projects {
+        order: 1
     }
 }

@@ -1,6 +1,5 @@
 {{ define "main" }}
 <div class="container">
-
     {{/*  Hero  */}}
     <div class="hero">
         <span class="project-type">{{ $.Param "hero.project_type" }}</span>
@@ -10,7 +9,7 @@
     </div>
 
     {{/*  Case Studies  */}}
-    <div class="case-studies">
+    <div id="projects" class="case-studies">
         <h2 class="case-studies--title">Case Studies</h2>
 
         <div class="case-study">
@@ -62,7 +61,9 @@
         <div class="notable-projects__grid">
             <div class="notable-projects__grid__project">
                 <div class="notable-projects__grid__project__image">
-                    <a href="#"></a><img src="https://picsum.photos/200/200" alt=""></a>
+                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize">
+                        <img src="/images/manifest_website.jpg" alt="">
+                    </a>
                     <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="{{ $.Param "icons.external_link" }}" />
                     </svg>
@@ -71,7 +72,8 @@
             </div>
             <div class="notable-projects__grid__project">
                 <div class="notable-projects__grid__project__image">
-                    <a href="#"><img src="https://picsum.photos/200/200" alt=""></a>
+                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="images/game-square.jpg"
+                            alt=""></a>
                     <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="{{ $.Param "icons.external_link" }}" />
                     </svg>
@@ -80,7 +82,8 @@
             </div>
             <div class="notable-projects__grid__project">
                 <div class="notable-projects__grid__project__image">
-                    <a href="#"><img src="https://picsum.photos/200/200" alt=""></a>
+                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="https://picsum.photos/200/200"
+                            alt=""></a>
                     <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="{{ $.Param "icons.external_link" }}" />
                     </svg>
@@ -125,7 +128,7 @@
     </div>
 
     {{/*  About  */}}
-    <div class="about">
+    <div id="about" class="about">
         <h2 class="about--title">About Me</h2>
         <div class="about__grid">
             <div class="about__grid__img">

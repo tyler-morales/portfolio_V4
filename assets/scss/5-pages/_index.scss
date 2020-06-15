@@ -149,9 +149,7 @@ img {
                 margin-top: 10px;
             }
         }
-
     }
-
 }
 
 .facts {
@@ -228,7 +226,7 @@ img {
             display: inline-block;
             margin: 30px auto;
             width: 100%;
-            
+
             @include breakpoint(sm) {
                 padding: 22px;
                 margin: 10px 0px;
