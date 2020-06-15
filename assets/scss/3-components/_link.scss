@@ -21,33 +21,3 @@
         }
     }
 }
-
-.icon {
-    cursor: pointer;
-    display: block;
-    fill: #000;
-}
-
-.icon--social {
-    @extend .icon;
-    height: 48px;
-    width: 48px;
-
-}
-
-.external-link-icon {
-    position: absolute;
-    top: 14px;
-    right: 35px;
-    top: 17px;
-    right: 17px;
-    fill: #8bc34a;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: all .3s;
-
-    &:hover {
-        fill: blue;
-    }
-}

@@ -1,0 +1,31 @@
+.icon {
+    width: 48px;
+    height: 48px;
+    fill: currentColor;
+
+    &--social {
+        @extend .icon;
+        // fill: black;
+    }
+
+    &--external-link {
+        @extend .icon;
+        position: absolute;
+        top: 14px;
+        right: 35px;
+        top: 17px;
+        right: 17px;
+        fill: #8bc34a;
+        width: 24px;
+        height: 24px;
+        transition: all .3s;
+    }
+
+    &--arrow-right {
+        @extend .icon;
+        transition: all .3s;
+        margin-left: 5px;
+        width: 24px;
+        height: 24px;
+    }
+}

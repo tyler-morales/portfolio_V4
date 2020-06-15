@@ -22,9 +22,8 @@
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg id="arrow-right"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="{{ $.Param "icons.arrow_right" }}" />
+                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg class="icon--arrow-right">
+                            <use xlink:href="icons/sprite.svg#arrow-right"></use>
                         </svg>
                     </span>
                 </a>
@@ -42,9 +41,8 @@
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg id="arrow-right"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="{{ $.Param "icons.arrow_right" }}" />
+                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg class="icon--arrow-right">
+                            <use xlink:href="icons/sprite.svg#arrow-right"></use>
                         </svg>
                     </span>
                 </a>
@@ -64,8 +62,8 @@
                     <a href="#" class="img-hover-zoom img-hover-zoom--colorize">
                         <img src="/images/manifest_website.jpg" alt="">
                     </a>
-                    <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="{{ $.Param "icons.external_link" }}" />
+                    <svg class="icon--external-link">
+                        <use xlink:href="icons/sprite.svg#external-link"></use>
                     </svg>
                 </div>
                 <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
@@ -74,8 +72,8 @@
                 <div class="notable-projects__grid__project__image">
                     <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="images/game-square.jpg"
                             alt=""></a>
-                    <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="{{ $.Param "icons.external_link" }}" />
+                    <svg class="icon--external-link">
+                        <use xlink:href="icons/sprite.svg#external-link"></use>
                     </svg>
                 </div>
                 <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
@@ -84,8 +82,8 @@
                 <div class="notable-projects__grid__project__image">
                     <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="https://picsum.photos/200/200"
                             alt=""></a>
-                    <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="{{ $.Param "icons.external_link" }}" />
+                    <svg class="icon--external-link">
+                        <use xlink:href="icons/sprite.svg#external-link"></use>
                     </svg>
                 </div>
                 <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
@@ -170,19 +168,20 @@
             <div class="about__grid__socials">
                 <h2>Connect</h2>
                 <div class="about__grid__socials__icons u-mt">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="icon--social">
-                            <path d="{{ $.Param "icons.github" }}" /></svg></a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon--social">
-                            <path d="{{ $.Param "icons.insta" }}" />
+                    <a href="#"><svg class="icon--social">
+                            <use xlink:href="icons/sprite.svg#github"></use>
                         </svg></a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon--social">
-                            <path d="{{ $.Param "icons.linkedin" }}" />
+                    <a href="#"><svg class="icon--social">
+                            <use xlink:href="icons/sprite.svg#insta"></use>
                         </svg></a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="icon--social">
-                            <path d="{{ $.Param "icons.medium" }}" />
+                    <a href="#"><svg class="icon--social">
+                            <use xlink:href="icons/sprite.svg#medium"></use>
                         </svg></a>
-                    <a href="#"><svg viewBox="0 0 24 24" class="icon--social" xmlns="http://www.w3.org/2000/svg">
-                            <path d="{{ $.Param "icons.email" }}" clip-rule="evenodd" fill-rule="evenodd" />
+                    <a href="#"><svg class="icon--social">
+                            <use xlink:href="icons/sprite.svg#email"></use>
+                        </svg></a>
+                    <a href="#"><svg class="icon--social">
+                            <use xlink:href="icons/sprite.svg#linkedin"></use>
                         </svg></a>
                 </div>
             </div>
