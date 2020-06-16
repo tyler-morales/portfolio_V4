@@ -17,6 +17,7 @@
 
     @include breakpoint(sm) {
         margin-bottom: 0;
+        padding: 5px 0;
     }
 
     &__name {
@@ -27,7 +28,8 @@
         border: 1px solid white;
         padding: 5px 15px;
         transition: all .3s;
-        &:hover{
+
+        &:hover {
             color: slategray;
             background-color: #fff;
         }

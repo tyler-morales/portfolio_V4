@@ -1,10 +1,24 @@
 {{ define "main" }}
+
+{{ range .Paginator.Pages }}
+<ul>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+</ul>
+{{ end }}
+
 <div class="container">
     {{/*  Hero  */}}
     <div class="hero">
         <span class="project-type">{{ $.Param "hero.project_type" }}</span>
         <h1>{{ $.Param "hero.title" }}</h1>
         <h3>{{ $.Param "hero.description" }}</h3>
+        <a href="/projects/01_project">
+            <span id="view-project" class="link--view-project">View Project
+                <svg id="arrow-right" class="icon--arrow-right">
+                    <use xlink:href="icons/sprite.svg#arrow-right"></use>
+                </svg>
+            </span>
+        </a>
         <img src="{{ $.Param "hero.img" }}" class="hero--img" alt="">
     </div>
 
@@ -22,7 +36,9 @@
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg class="icon--arrow-right">
+                <a href="/projects/02_project">
+                    <span id="view-project" class="link--view-project">View Project
+                        <svg id="arrow-right" class="icon--arrow-right">
                             <use xlink:href="icons/sprite.svg#arrow-right"></use>
                         </svg>
                     </span>
@@ -41,7 +57,9 @@
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="#"><span id="view-project-link" class="link--view-project">View Project <svg class="icon--arrow-right">
+                <a href="/projects/03_project">
+                    <span id="view-project" class="link--view-project">View Project
+                        <svg id="arrow-right" class="icon--arrow-right">
                             <use xlink:href="icons/sprite.svg#arrow-right"></use>
                         </svg>
                     </span>
@@ -188,5 +206,5 @@
         </div>
     </div>
 </div>
-<script src="/js/app.js"></script>
+<script src="/js/scripts.js"></script>
 {{ end }}

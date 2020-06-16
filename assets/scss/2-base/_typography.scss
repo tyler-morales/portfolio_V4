@@ -39,6 +39,7 @@ h2 {
 h3 {
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: 20px;
 
     @include breakpoint(sm) {
         font-size: 21px;

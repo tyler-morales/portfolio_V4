@@ -263,7 +263,7 @@ img {
                 justify-content: space-around;
 
                 :hover>* {
-                    fill: red;
+                    fill: var(--color-link);
                     transition: all .3s;
                 }
             }

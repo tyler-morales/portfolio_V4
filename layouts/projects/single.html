@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{.Content }}
+
+<ul id=menu>
+    {{ range .Site.RegularPages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+
+
+{{ partial "prevNext" . }}
+{{ end }}

@@ -2,10 +2,10 @@
     width: 48px;
     height: 48px;
     fill: currentColor;
+    transition: all .3s;
 
     &--social {
         @extend .icon;
-        // fill: black;
     }
 
     &--external-link {
@@ -15,7 +15,7 @@
         right: 35px;
         top: 17px;
         right: 17px;
-        fill: #8bc34a;
+        fill: var(--color-tertiary);
         width: 24px;
         height: 24px;
         transition: all .3s;
@@ -23,7 +23,6 @@
 
     &--arrow-right {
         @extend .icon;
-        transition: all .3s;
         margin-left: 5px;
         width: 24px;
         height: 24px;
