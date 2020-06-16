@@ -36,4 +36,7 @@ facts_03:
 skills:
     dev: [HTML, CSS/SCSS, JS (ES6), HUGO, Git/ Github, CLI, API's]
     design: [Adobe CC Suite, Prototyping, Mockups, Art Direction, Photography]
+about:
+    title: Hello, World 🌎!
+    sub_title: I’m a front end develop from Chicago
 ---

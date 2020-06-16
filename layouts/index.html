@@ -1,11 +1,4 @@
 {{ define "main" }}
-
-{{ range .Paginator.Pages }}
-<ul>
-    <a href="{{.Permalink}}">{{.Title}}</a>
-</ul>
-{{ end }}
-
 <div class="container">
     {{/*  Hero  */}}
     <div class="hero">
@@ -75,37 +68,19 @@
         <h4>Smaller Projects & Experiments</h4>
 
         <div class="notable-projects__grid">
+            {{ range .Paginator.Pages }}
             <div class="notable-projects__grid__project">
                 <div class="notable-projects__grid__project__image">
-                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize">
-                        <img src="/images/manifest_website.jpg" alt="">
+                    <a href="{{.Permalink}}" class="img-hover-zoom img-hover-zoom--colorize">
+                        <img src="{{ .Params.thumbnail }}" alt="">
                     </a>
                     <svg class="icon--external-link">
                         <use xlink:href="icons/sprite.svg#external-link"></use>
                     </svg>
                 </div>
-                <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
+                <h5 class="notable-projects__grid__project--title">{{.Title}}</h5>
             </div>
-            <div class="notable-projects__grid__project">
-                <div class="notable-projects__grid__project__image">
-                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="images/game-square.jpg"
-                            alt=""></a>
-                    <svg class="icon--external-link">
-                        <use xlink:href="icons/sprite.svg#external-link"></use>
-                    </svg>
-                </div>
-                <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
-            </div>
-            <div class="notable-projects__grid__project">
-                <div class="notable-projects__grid__project__image">
-                    <a href="#" class="img-hover-zoom img-hover-zoom--colorize"><img src="https://picsum.photos/200/200"
-                            alt=""></a>
-                    <svg class="icon--external-link">
-                        <use xlink:href="icons/sprite.svg#external-link"></use>
-                    </svg>
-                </div>
-                <h5 class="notable-projects__grid__project--title">Manifest Website</h5>
-            </div>
+            {{ end }}
         </div>
     </div>
 
@@ -148,8 +123,8 @@
         <h2 class="about--title">About Me</h2>
         <div class="about__grid">
             <div class="about__grid__img">
-                <h2>Hello, World 🌎!</h2>
-                <h4>I’m a front end develop from Chicago</h4>
+                <h2>{{.Params.about.title}}</h2>
+                <h4>{{.Params.about.sub_title}}</h4>
                 <img class="u-mt" src="/images/profile.png" alt="">
             </div>
 
