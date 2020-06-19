@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <div class="container">
     {{/*  Hero  */}}
     <div class="hero">
@@ -43,7 +44,7 @@
         <div class="case-study reverse">
             <div class="case-study__text">
                 <span class="project-type">{{ $.Param "case_study_02.type" }}</span>
-                <h2>{{ $.Param "case_study_02.title" }}</h2>
+                <h2>{{ .Params.case_study_02.title }}</h2>
                 <h4>{{ $.Param "case_study_02.description" }}</h4>
                 <div class="case-study__text__tags">
                     {{ range .Params.case_study_02.tags }}
