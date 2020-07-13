@@ -1,4 +1,212 @@
 .project-page {
-    text-align: center;
-    background-color: yellow;
+    // background-color: #0A0B0F;
+    // color: white;
+
+    &__top-bar {
+        background: #ffffff80;
+        backdrop-filter: blur(15px);
+        width: 100%;
+        transition: all .3s;
+        z-index: 10;
+
+        &__text {
+            display: flex;
+            padding: 12px 0;
+            max-width: 1000px;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                min-width: 400px;
+
+                li {
+                    font-size: 12px;
+
+                    &:hover {
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+
+    &__hero {
+        display: flex;
+        align-items: center;
+
+        &--img {}
+
+        &__text {
+            padding: 0 45px;
+            text-align: center;
+        }
+    }
+
+    &__bg {
+        max-width: 837px;
+        margin: 10vw auto;
+    }
+
+    &__snippets {
+        max-width: 837px;
+        margin: 10vw auto;
+
+        .snippet-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px 80px;
+
+            @include breakpoint(sm) {
+                grid-template-columns: 1fr;
+            }
+
+            li:not(:first-child) {
+                display: inline;
+                margin-right: 15px;
+            }
+
+            li:first-child::after {
+                content: "";
+            }
+
+            li:last-child::after {
+                content: "";
+            }
+
+            li::after {
+                content: "|";
+                padding-right: 10px;
+                padding-left: 20px;
+            }
+
+            &--title {
+                border-bottom: 2px solid #fff;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__situation {
+        max-width: 837px;
+        margin: 10vw auto;
+
+        p {
+            font-size: 72px;
+            line-height: 97px;
+        }
+    }
+
+    &__process {
+        max-width: 73vw;
+        margin: 10vw auto;
+
+        display: grid;
+        grid-template-columns: 200px 5fr;
+        gap: 80px;
+        position: relative;
+
+        h3 {
+            width: 210px;
+            margin-bottom: 100px;
+        }
+
+        &__content {
+            p {
+                margin-bottom: 80px;
+            }
+
+            h4 {
+                margin-bottom: 30px;
+            }
+
+            .client-pic {
+                margin: 80px 0 20px 0;
+                width: 800px;
+            }
+        }
+    }
+
+    &__overview {
+        max-width: 73vw;
+        margin: 10vw auto;
+
+        display: grid;
+        grid-template-columns: 200px 5fr;
+        gap: 80px;
+
+        h3 {
+            width: 210px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__competition {
+        // background: #3b3b3b;
+        background-color: #FAFAFA;
+        padding: 40px;
+
+        h3:first-child {
+            max-width: 90vw;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .btn-controls {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 150px;
+        }
+    }
+}
+
+.project-page--header {
+    border-top: 3px solid #808080;
+    color: #808080;
+    // color: #7098CF;
+    width: max-content;
+}
+
+.gap {
+    display: grid;
+    gap: 30px;
+}
+
+.dev {
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        justify-items: center;
+
+        width: 100%;
+        margin-top: 80px;
+
+        h4 {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    &__features {
+        margin-top: 100px;
+
+        h3 {
+            width: max-content;
+        }
+
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+        }
+    }
 }

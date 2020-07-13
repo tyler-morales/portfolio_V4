@@ -1,0 +1,26 @@
+.vertical-sliding-cards {
+    .card-item {
+        height: auto;
+        width: 80vw;
+        position: sticky;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        top: 100px;
+        padding: 3rem;
+        box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+        background: #fafafa;
+
+        &__text {
+            &--heading {
+                width: 100%;
+            }
+            p{
+                color: var(--light-gray);
+            }
+        }
+    }
+}

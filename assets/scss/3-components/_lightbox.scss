@@ -1,0 +1,38 @@
+.thumbnail {
+    cursor: zoom-in;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    cursor: zoom-out;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    // backdrop-filter: blur(2px);
+
+    img {
+        /** Pad the lightbox image */
+        width: auto;
+        max-height: 90vh;
+        // margin: 2% 0 5% 0;
+        margin: 40px;
+    }
+
+    &:target {
+        /** Remove default browser outline */
+        outline: none;
+
+        /** Unhide lightbox **/
+        display: block;
+    }
+}

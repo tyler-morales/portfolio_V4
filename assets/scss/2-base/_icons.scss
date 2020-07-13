@@ -23,8 +23,15 @@
 
     &--arrow-right {
         @extend .icon;
-        margin-left: 5px;
         width: 24px;
         height: 24px;
+        fill: currentColor;
+    }
+
+    &--arrow-left {
+        @extend .icon;
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
     }
 }

@@ -1,0 +1,75 @@
+.cards-box {
+    position: relative;
+    height: 530px;
+}
+
+.cards-box .card {
+    max-width: 80vw;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+$colors: (#00af54, #3772ff, #df2935, #fdca40, #f6bdd1, #eeb33c);
+
+@for $i from 1 through length($colors) {
+    .card:nth-of-type(#{$i}) {
+        background: nth($colors, $i);
+    }
+}
+
+.cards-box .card.hide {
+    visibility: hidden;
+    height: min-content;
+}
+
+.cards-box .card:not(.hide) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s cubic-bezier(0.18, 0.98, 0.45, 1);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+}
+
+.cards-box .card:not(.hide)[data-slide='0'] {
+    transform: translate(0px, 0px) scale(1);
+    z-index: 6;
+    opacity: 1;
+}
+
+.cards-box .card:not(.hide)[data-slide='1'] {
+    transform: translate(15px, 15px) scale(0.975);
+    z-index: 5;
+    opacity: 0.9;
+}
+
+.cards-box .card:not(.hide)[data-slide='2'] {
+    transform: translate(30px, 30px) scale(0.95);
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.cards-box .card:not(.hide)[data-slide='3'] {
+    transform: translate(45px, 45px) scale(0.925);
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.cards-box .card:not(.hide)[data-slide='4'] {
+    transform: translate(60px, 60px) scale(0.9);
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.cards-box .card:not(.hide)[data-slide='5'] {
+    transform: translate(60px, 60px) scale(0.875);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.cards-box .card:not(.hide)[data-slide='0'] {
+    transition: all 0.32s cubic-bezier(0.18, 0.98, 0.45, 1);
+}
+
+.content-box {
+    padding: 14px 18px 20px;
+}

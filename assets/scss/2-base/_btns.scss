@@ -1,0 +1,20 @@
+.btn {
+    cursor: pointer;
+
+    &--hs {
+        @extend .btn;
+        // border: 1px solid white;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 10px;
+        transition: all 0.3s;
+        // color: white;
+        color: black;
+        fill: black;
+
+        &:focus {
+            outline: 1px solid black;
+            outline-color: lightblue;
+        }
+    }
+}

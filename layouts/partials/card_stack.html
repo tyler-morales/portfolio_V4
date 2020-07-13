@@ -1,0 +1,120 @@
+<div class="cards-box" id="slide-box">
+    <div class="card hide">
+        <div class="content-placeholder">
+            <img src="https://picsum.photos/600/400" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="card">
+        <div class="content-box">
+            <img src="/images/process/1_goals.jpg" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="card">
+        <div class="content-box">
+            <img src="/images/process/2_research.jpg" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="card">
+        <div class="content-box">
+            <img src="/images/process/3_UX.png" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="card">
+        <div class="content-box">
+            <img src="/images/process/4_UI.png" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="card">
+        <div class="content-box">
+            <img src="/images/process/5_code.png" alt="" loading="lazy">
+        </div>
+    </div>
+</div>
+
+<script>
+    let step1 = document.getElementById('step-1')
+    let step2 = document.getElementById('step-2')
+    let step3 = document.getElementById('step-3')
+    let step4 = document.getElementById('step-4')
+    let step5 = document.getElementById('step-5')
+
+
+    window.onload = () => {
+        // get p tags for description
+        let goals = document.getElementById('goals')
+        let research = document.getElementById('research')
+        let ux = document.getElementById('ux')
+        let ui = document.getElementById('ui')
+        let development = document.getElementById('development')
+
+        let sliderImagesBox = document.querySelectorAll('.cards-box');
+        sliderImagesBox.forEach(el => {
+            let imageNodes = el.querySelectorAll('.card:not(.hide)')
+            let arrIndexes = []; // Index array
+            (() => {
+                // The loop that added values to the arrIndexes array for the first time
+                let start = 0;
+                while (imageNodes.length > start) {
+                    arrIndexes.push(start++);
+                }
+            })();
+
+            let setIndex = (arr) => {
+                let list = []
+                let el = document.querySelector('#slide-box')
+                for (let i = 0; i < imageNodes.length; i++) {
+                    imageNodes[i].dataset.slide = arr[i] // Set indexes
+                    list.push(imageNodes[i].dataset.slide)
+                }
+                switch (list[0]) {
+                    case '1':
+                        step5.classList.add('active-item')
+                        step4.classList.remove('active-item')
+                        step4.classList.add('inactive-item')
+
+                        ui.classList.add('hidden')
+                        development.classList.remove('hidden')
+                        break;
+                    case '2':
+                        step4.classList.add('active-item')
+                        step3.classList.remove('active-item')
+                        step3.classList.add('inactive-item')
+
+                        ux.classList.add('hidden')
+                        ui.classList.remove('hidden')
+                        break;
+                    case '3':
+                        step3.classList.add('active-item')
+                        step2.classList.remove('active-item')
+                        step2.classList.add('inactive-item')
+
+                        research.classList.add('hidden')
+                        ux.classList.remove('hidden')
+                        break;
+                    case '4':
+                        step2.classList.add('active-item')
+                        step1.classList.remove('active-item')
+                        step1.classList.add('inactive-item')
+
+                        goals.classList.add('hidden')
+                        research.classList.remove('hidden')
+                        break;
+                    case '0':
+                        step5.classList.remove('active-item')
+                        step1.classList.add('active-item')
+
+                        development.classList.add('hidden')
+                        goals.classList.remove('hidden')
+
+                        break;
+                }
+            }
+
+            el.addEventListener('click', () => {
+                arrIndexes.unshift(arrIndexes.pop());
+                setIndex(arrIndexes)
+            })
+            setIndex(arrIndexes) // The first indexes addition
+        });
+    };
+</script>

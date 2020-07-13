@@ -5,3 +5,63 @@ html {
 .u-mt {
   margin-top: 50px;
 }
+
+.u-light-gray {
+  color: var(--light-gray);
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+  display: block;
+  color: currentColor;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.u-bold {
+  font-weight: 600;
+}
+
+.col-02 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.u-mb-sm {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.show {
+  visibility: visible;
+}
+
+.flex-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.p-title{
+  color: black;
+}
+
+.inactive-item {
+  color: var(--light-gray)
+}
+
+.active-item {
+  color: #000;
+}
