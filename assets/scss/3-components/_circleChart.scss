@@ -1,0 +1,67 @@
+.chart {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    width: min-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    // stroke-dashoffset: 405;
+    stroke-dasharray: 544;
+
+    svg {
+        width: 200px;
+        height: 200px;
+
+        .ring {
+            fill: transparent;
+            stroke: #00c865;
+            stroke-width: 15;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 1s;
+            -webkit-animation-play-state: running;
+            transform: rotate(-90deg);
+            transform-origin: center;
+        }
+    }
+
+    &--num {
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -9999;
+        border-radius: 50%;
+        font-size: 65px;
+        background: #e6faf0;
+        color: #00c865;
+    }
+
+    &--caption {
+        margin-top: 20px;
+    }
+}
+
+/* Set the initial values for the animation */
+
+#chartSpeed {
+    // stroke-dashoffset: 133;
+    // animation: show75 2s;
+}
+
+/* Keyframes for the initial animation */
+
+// @keyframes show75 {
+//     from {
+//         stroke-dashoffset: 534;
+//     }
+
+//     to {
+//         stroke-dashoffset: 133;
+//     }
+// }

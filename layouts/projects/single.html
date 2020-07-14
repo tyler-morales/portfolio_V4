@@ -4,26 +4,26 @@
         <div class="project-page__top-bar__text">
             <h4>International Space Station</h4>
             <ul>
-                <a href="#">
+                <a href="#intro">
                     <li>Intro</li>
                 </a>
-                <a href="#">
+                <a href="#quickfacts">
                     <li>Quick Facts</li>
                 </a>
-                <a href="#">
+                <a href="#solution">
+                    <li>Solution</li>
+                </a>
+                <a href="#process">
                     <li>Process</li>
                 </a>
-                <a href="#">
-                    <li>Technologies</li>
-                </a>
-                <a href="#">
+                <a href="#final">
                     <li>Final</li>
                 </a>
             </ul>
         </div>
     </div>
     <div class="project-page__hero">
-        <img src="{{ .Params.hero_img }}" class="project-page__hero--img">
+        <img src="{{ .Params.hero_img }}" class="project-page__hero--img" loading="lazy">
         <div class="project-page__hero__text">
             <h3 class="project-page__hero__text--title">{{.Title}}</h3>
             <h1 class="project-page__hero__text--description">{{.Description}}</h1>
@@ -33,7 +33,7 @@
 
     <div class="gap">
 
-        <div class="project-page__bg">
+        <div id="intro" class="project-page__bg">
             <h3>An Industry leader and innovator</h3>
             <h3 class="u-light-gray">The International Space Station (ISS) is a multi-nation construction project that
                 is
@@ -43,7 +43,7 @@
                 continuously occupied since Nov. 2, 2000.</h3>
         </div>
 
-        <div class="project-page__snippets">
+        <div id="quickfacts" class="project-page__snippets">
             <h3 class="project-page--header">Snippets</h3>
             <div class="snippet-list">
                 <ul class="snippet">
@@ -78,7 +78,7 @@
             <h5>–ISS Comission</h5>
         </div>
 
-        <div class="project-page__bg">
+        <div id="solution" class="project-page__bg">
             <h3 class="project-page--header">The Solution</h3>
             <h3>Translating Data Into a Readable, Digestible & Beautiful Application</h3>
             <p class="u-light-gray">The International Space Station (ISS) is a multi-nation construction project that is
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="project-page__overview">
+        <div id="process" class="project-page__overview">
             <div>
                 <h3 class="project-page--header">Overview</h3>
                 <ul id="steps" class="project-page__overview__nav">
@@ -190,7 +190,8 @@
 
                 <div class='hs-item'>
                     <div class="perspective-3d">
-                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/555/460/280" loading="lazy">
+                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/555/460/280"
+                            loading="lazy">
                     </div>
                     <div class='hs-item__text'>
                         <h3>isstracker.com</h3>
@@ -200,7 +201,8 @@
 
                 <div class='hs-item'>
                     <div class="perspective-3d">
-                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/999/460/280" loading="lazy">
+                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/999/460/280"
+                            loading="lazy">
                     </div>
                     <div class='hs-item__text'>
                         <h3>isstracker.com</h3>
@@ -210,7 +212,8 @@
 
                 <div class='hs-item'>
                     <div class="perspective-3d">
-                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/765/460/280" loading="lazy">
+                        <img class="perspective-3d--img hs-item__img" src="https://picsum.photos/id/765/460/280"
+                            loading="lazy">
                     </div>
                     <div class='hs-item__text'>
                         <h3>isstracker.com</h3>
@@ -457,10 +460,94 @@
             </div>
         </div>
 
+        <div id="final" class="project-page__process final">
+            <h3 class="project-page--header">Final Results</h3>
+            <div class="project-page__process__content">
+                <h2>Letting the Results Speak for Themselves</h2>
+                <a href="#final_Image">
+                    <img class="client-pic thumbnail" src="/images/iss_composite.png" loading="lazy" alt="">
+                </a>
+
+                <a href="#_" class="lightbox" id="final_Image">
+                    <img src="https://tmo.codes/images/project_01/iss_composite.png" loading="lazy">
+                </a>
+            </div>
+
+
+            <h3>Performance</h3>
+            <div class="performanceCharts">
+                <!-- <figure id="chartSpeed" class="chart" data-percent="75">
+                    <svg>
+                        <circle class="ring" cx="95" cy="95" r="85" />
+                    </svg>
+                    <span class="chart--num">75</span>
+                    <figcaption class="chart--caption">Speed</figcaption>
+                </figure> -->
+            </div>
+
+
+
+        </div>
 
 
         {{ partial "prevNext" . }}
     </div>
 </div>
+
+<script>
+    const charts = document.querySelector(".performanceCharts")
+
+    const createChart = (name, percentage, description) => {
+        let calcPercent = (540 * (1 - (percentage / 100)))
+
+        // create figure el
+        const figure = document.createElement('figure')
+        figure.classList.add("chart");
+        figure.setAttribute("data-percent", percentage);
+        figure.style.strokeDashoffset = calcPercent
+        // create svg circle
+        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+        // create svg ring
+        const ring = document.createElementNS('http://www.w3.org/2000/svg', "circle")
+        ring.setAttributeNS(null, 'class', "ring")
+        ring.setAttributeNS(null, 'cx', '95')
+        ring.setAttributeNS(null, 'cy', '95')
+        ring.setAttributeNS(null, 'r', '85')
+
+        // create number
+        const num = document.createElement('span')
+        num.classList.add('chart--num')
+        num.textContent = percentage
+
+        // create caption
+        const figCap = document.createElement('figcaption')
+        figCap.textContent = 'Performance'
+        figCap.classList.add('chart--caption')
+
+        // combine elements
+        svg.appendChild(ring)
+        figure.appendChild(svg)
+        figure.appendChild(num)
+        figure.appendChild(figCap)
+        charts.appendChild(figure)
+
+        // animation
+        figure.animate([
+            // keyframes
+            {
+                strokeDashoffset: 540
+            },
+            {
+                strokeDashoffset: calcPercent
+            }
+        ], {
+            // timing options
+            duration: 2000,
+        });
+    }
+
+    createChart('speed', 20)
+</script>
 <script src="/js/projects.js"></script>
 {{ end }}

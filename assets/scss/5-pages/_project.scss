@@ -34,14 +34,22 @@
     }
 
     &__hero {
-        display: flex;
+        // display: flex;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 45px;
         align-items: center;
 
         &--img {}
 
         &__text {
-            padding: 0 45px;
             text-align: center;
+            padding-right: 45px;
+
+            div {
+                margin-top: 50px;
+            }
         }
     }
 
@@ -166,6 +174,11 @@
             width: 150px;
         }
     }
+
+    &__final {
+        max-width: 73vw;
+        margin: 10vw auto;
+    }
 }
 
 .project-page--header {
@@ -203,10 +216,16 @@
             width: max-content;
         }
 
-        &__grid{
+        &__grid {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 50px;
         }
     }
+}
+
+.performanceCharts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px
 }
