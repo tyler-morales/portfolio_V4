@@ -3,7 +3,6 @@
     gap: 100px;
     margin-top: 85px;
 
-
     @include breakpoint(sm) {
         gap: 20px;
     }
@@ -215,7 +214,6 @@ img {
         @include breakpoint(sm) {
             columns: 1 auto;
             margin: 0;
-            padding: 0;
         }
 
         &>* {

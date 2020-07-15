@@ -28,10 +28,11 @@
 
 /* Style the tab content */
 .tabcontent {
-    h3 {
+    &--title {
         margin-top: 50px;
         width: 100% !important;
         text-align: center;
+        margin-bottom: 20px !important;
     }
 }
 
