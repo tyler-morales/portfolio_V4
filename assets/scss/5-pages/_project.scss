@@ -1,6 +1,6 @@
 .project-page {
     // background-color: #0A0B0F;
-    // color: white;
+    color: white;
 
     &__top-bar {
         background: #ffffff80;
@@ -34,8 +34,6 @@
     }
 
     &__hero {
-        // display: flex;
-        // align-items: center;
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         gap: 45px;
@@ -157,8 +155,8 @@
     }
 
     &__competition {
-        // background: #3b3b3b;
-        background-color: #FAFAFA;
+        background: #191b24;
+        // background-color: #FAFAFA;
         padding: 40px;
 
         h3:first-child {
@@ -174,18 +172,13 @@
             width: 150px;
         }
     }
-
-    &__final {
-        max-width: 73vw;
-        margin: 10vw auto;
-    }
 }
 
 .project-page--header {
     border-top: 3px solid #808080;
     color: #808080;
-    // color: #7098CF;
     width: max-content;
+    color: rgb(188, 188, 255);
 }
 
 .gap {
@@ -224,8 +217,61 @@
     }
 }
 
-.performanceCharts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px
+
+.performance {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        margin-bottom: 80px;
+
+        h3 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__charts {
+        height: auto;
+        min-height: 200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        justify-items: center;
+    }
+
+    &__descriptions {
+        margin-top: 100px;
+
+        &--title {
+            margin: 0 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.metrics {
+    &__table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 40px;
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 20px 0;
+
+            &--text {
+                color: white;
+                font-weight: 300;
+            }
+
+            &--num {
+                color: #00c865
+            }
+        }
+    }
 }

@@ -1,0 +1,55 @@
+/* Style the tab */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    /* Style the buttons inside the tab */
+    button {
+        border: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: var(--light-gray);
+
+        /* Change background color of buttons on hover */
+        &:hover {
+            // background-color: #ddd;
+            color: #fff;
+        }
+
+        /* Create an active/current tablink class */
+        &.active {
+            color: #fff;
+        }
+    }
+}
+
+/* Style the tab content */
+.tabcontent {
+    h3 {
+        margin-top: 50px;
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
+//animation 
+.tabcontent {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

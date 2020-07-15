@@ -7,9 +7,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    // stroke-dashoffset: 405;
     stroke-dasharray: 544;
-
+    color: white;
     svg {
         width: 200px;
         height: 200px;
@@ -23,6 +22,7 @@
             -webkit-animation-play-state: running;
             transform: rotate(-90deg);
             transform-origin: center;
+            background: -webkit-linear-gradient(-86deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%);
         }
     }
 
@@ -30,15 +30,15 @@
         position: absolute;
         width: 170px;
         height: 170px;
-        top: 10px;
+        top: 20px;
         left: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: -9999;
+        // z-index: -9999;
         border-radius: 50%;
         font-size: 65px;
-        background: #e6faf0;
+        // background: #e6faf0;
         color: #00c865;
     }
 
@@ -46,22 +46,3 @@
         margin-top: 20px;
     }
 }
-
-/* Set the initial values for the animation */
-
-#chartSpeed {
-    // stroke-dashoffset: 133;
-    // animation: show75 2s;
-}
-
-/* Keyframes for the initial animation */
-
-// @keyframes show75 {
-//     from {
-//         stroke-dashoffset: 534;
-//     }
-
-//     to {
-//         stroke-dashoffset: 133;
-//     }
-// }
