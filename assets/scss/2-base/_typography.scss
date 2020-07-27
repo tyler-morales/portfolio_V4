@@ -18,6 +18,11 @@ h1 {
     font-size: 72px;
     font-weight: 500;
 
+    @include breakpoint(md) {
+        font-size: 50px;
+        line-height: 53px;
+    }
+
     @include breakpoint(sm) {
         font-size: 40px;
         line-height: 53px;
@@ -42,6 +47,10 @@ h3 {
     font-weight: 500;
     margin-bottom: 20px;
 
+    @include breakpoint(md) {
+        font-size: 26px;
+        line-height: 28px;
+    }
     @include breakpoint(sm) {
         font-size: 21px;
         line-height: 28px;

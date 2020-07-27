@@ -30,7 +30,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
 
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     grid-template-columns: 1fr;
   }
 }
@@ -54,7 +54,7 @@ html {
   justify-content: space-between;
 }
 
-.p-title{
+.p-title {
   color: black;
 }
 
@@ -66,6 +66,10 @@ html {
   color: rgb(255, 255, 255);
 }
 
-.u-tac{
+.u-tac {
   text-align: center;
+}
+
+.u-fff {
+  color: var(--color-text)
 }

@@ -15,11 +15,21 @@
         // background: #fafafa;
         background-color: #101117;
 
+        @include breakpoint(md){
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint(sm) {
+            
+            padding: 20px;
+        }
+
         &__text {
             &--heading {
                 width: 100%;
             }
-            p{
+
+            p {
                 color: var(--light-gray);
             }
         }

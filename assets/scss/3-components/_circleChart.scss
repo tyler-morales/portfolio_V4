@@ -9,6 +9,15 @@
     align-items: center;
     stroke-dasharray: 544;
     color: white;
+
+    @include breakpoint(md) {
+        // margin: 0 20px 40px 0;
+    }
+
+    @include breakpoint(sm) {
+        margin: 20px auto;
+    }
+
     svg {
         width: 200px;
         height: 200px;
@@ -40,6 +49,9 @@
         font-size: 65px;
         // background: #e6faf0;
         color: #00c865;
+        background: linear-gradient(180deg, #3ef99d 0%, #004a26 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
 
     &--caption {

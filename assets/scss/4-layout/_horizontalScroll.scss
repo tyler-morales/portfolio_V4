@@ -7,10 +7,18 @@
   max-width: 90vw;
   margin: 0 auto;
 
+  @include breakpoint(sm) {
+    max-height: 600px;
+  }
+
   .hs-item {
     display: flex;
     align-items: center;
     margin-right: 150px;
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
 
     &__img {
       flex-shrink: 0;
@@ -26,6 +34,10 @@
       margin-left: 40px;
       max-width: 300px;
       min-width: 300px;
+
+      @include breakpoint(sm) {
+        margin-left: 0;
+      }
     }
   }
 }
