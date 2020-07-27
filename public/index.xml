@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tyler Morales | Front End Developer | Home on Tyler Morales | Front End Developer</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Tyler Morales | Front End Developer | Home on Tyler Morales | Front End Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ISS Tracker</title>
+      <link>http://example.org/projects/01_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects/01_project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Adventure Game</title>
+      <link>http://example.org/projects/02_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects/02_project/</guid>
+      <description>I decided to start learning Go in March 2017.
+Follow my journey through this new blog.</description>
+    </item>
+    
+    <item>
+      <title>Travel Website</title>
+      <link>http://example.org/projects/03_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/projects/03_project/</guid>
+      <description>I decided to start learning Go in March 2017.
+Follow my journey through this new blog.</description>
+    </item>
+    
+  </channel>
+</rss>
