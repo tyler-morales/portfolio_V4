@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.org/projects/01_project/</loc>
+    <loc>https://tmo.codes/projects/01_project/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/projects/02_project/</loc>
+    <loc>https://tmo.codes/projects/02_project/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/projects/03_project/</loc>
+    <loc>https://tmo.codes/projects/03_project/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://tmo.codes/categories/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/projects/</loc>
+    <loc>https://tmo.codes/projects/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://tmo.codes/tags/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://tmo.codes/</loc>
   </url>
   
 </urlset>

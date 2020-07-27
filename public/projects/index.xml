@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Tyler Morales | Front End Developer</title>
-    <link>https://example.org/projects/</link>
+    <link>https://tmo.codes/projects/</link>
     <description>Recent content in Projects on Tyler Morales | Front End Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tmo.codes/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ISS Tracker</title>
-      <link>https://example.org/projects/01_project/</link>
+      <link>https://tmo.codes/projects/01_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/projects/01_project/</guid>
+      <guid>https://tmo.codes/projects/01_project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text Adventure Game</title>
-      <link>https://example.org/projects/02_project/</link>
+      <link>https://tmo.codes/projects/02_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/projects/02_project/</guid>
+      <guid>https://tmo.codes/projects/02_project/</guid>
       <description>I decided to start learning Go in March 2017.
 Follow my journey through this new blog.</description>
     </item>
     
     <item>
       <title>Travel Website</title>
-      <link>https://example.org/projects/03_project/</link>
+      <link>https://tmo.codes/projects/03_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/projects/03_project/</guid>
+      <guid>https://tmo.codes/projects/03_project/</guid>
       <description>I decided to start learning Go in March 2017.
 Follow my journey through this new blog.</description>
     </item>
