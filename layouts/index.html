@@ -3,9 +3,9 @@
 <div class="container">
     {{/*  Hero  */}}
     <div class="hero">
-        <span class="project-type">{{ $.Param "hero.project_type" }}</span>
-        <h1>{{ $.Param "hero.title" }}</h1>
-        <h3>{{ $.Param "hero.description" }}</h3>
+        <span class="project-type">{{ .Params.hero.project_type }}</span>
+        <h1>{{ .Params.hero.title }}</h1>
+        <h3>{{ .Params.hero.description }}</h3>
         <a href="/projects/01_project">
             <span id="view-project" class="link--view-project">View Project
                 <svg id="arrow-right" class="icon--arrow-right">
@@ -13,7 +13,7 @@
                 </svg>
             </span>
         </a>
-        <img src="{{ $.Param "hero.img" }}" class="hero--img" alt="">
+        <img src="{{ .Params.hero.img }}" class="hero--img" alt="">
     </div>
 
     {{/*  Case Studies  */}}
@@ -22,9 +22,9 @@
 
         <div class="case-study">
             <div class="case-study__text">
-                <span class="project-type">{{ $.Param "case_study_01.type" }}</span>
-                <h2>{{ $.Param "case_study_01.title" }}</h2>
-                <h4>{{ $.Param "case_study_01.description" }}</h4>
+                <span class="project-type">{{ .Params.case_study_01.type }}</span>
+                <h2>{{ .Params.case_study_01.title }}</h2>
+                <h4>{{ .Params.case_study_01.description }}</h4>
                 <div class="case-study__text__tags">
                     {{ range .Params.case_study_01.tags }}
                     <span class="case-study__text__tags--tag">{{.}}</span>
@@ -38,21 +38,21 @@
                     </span>
                 </a>
             </div>
-            <img src="{{ $.Param "case_study_01.img" }}" class="case-study--img">
+            <img src="{{ .Params.case_study_01.img }}" class="case-study--img">
 
         </div>
 
         <div class="case-study reverse">
             <div class="case-study__text">
-                <span class="project-type">{{ $.Param "case_study_01.type" }}</span>
-                <h2>{{ .Params.case_study_01.title }}</h2>
-                <h4>{{ $.Param "case_study_01.description" }}</h4>
+                <span class="project-type">{{ .Params.case_study_02.type }}</span>
+                <h2>{{ .Params.case_study_02.title }}</h2>
+                <h4>{{ .Params.case_study_02.description }}</h4>
                 <div class="case-study__text__tags">
-                    {{ range .Params.case_study_01.tags }}
+                    {{ range .Params.case_study_02.tags }}
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="/projects/01_project">
+                <a href="/projects/02_project">
                     <span id="view-project" class="link--view-project">View Project
                         <svg id="arrow-right" class="icon--arrow-right">
                             <use xlink:href="icons/sprite.svg#arrow-right"></use>
@@ -60,7 +60,7 @@
                     </span>
                 </a>
             </div>
-            <img class="img-md case-study--img" src="{{ $.Param "case_study_02.img" }}">
+            <img class="img-md case-study--img" src="{{ .Params.case_study_02.img }}">
         </div>
     </div>
 
@@ -89,9 +89,9 @@
     {{/*  Facts  */}}
     <div class="facts">
         <div class="facts__fact">
-            <img src="{{ $.Param "facts_01.img" }}" alt="" class="facts__fact--icon">
-            <h4>{{ $.Param "facts_01.title" }}</h4>
-            <p>{{ $.Param "facts_01.description" }}</p>
+            <img src="{{ .Params.facts_01.img }}" alt="" class="facts__fact--icon">
+            <h4>{{ .Params.facts_01.title }}</h4>
+            <p>{{ .Params.facts_01.description }}</p>
             <div class="facts__fact__tags">
                 {{ range .Params.facts_01.tags }}
                 <span class="facts__fact__tags--tag">{{ . }}</span>
@@ -99,9 +99,9 @@
             </div>
         </div>
         <div class="facts__fact">
-            <img src="{{ $.Param "facts_02.img" }}" alt="" class="facts__fact--icon">
-            <h4>{{ $.Param "facts_02.title" }}</h4>
-            <p>{{ $.Param "facts_02.description" }}</p>
+            <img src="{{ .Params.facts_02.img }}" alt="" class="facts__fact--icon">
+            <h4>{{ .Params.facts_02.title  }}</h4>
+            <p>{{ .Params.facts_02.description  }}</p>
             <div class="facts__fact__tags">
                 {{ range .Params.facts_02.tags }}
                 <span class="facts__fact__tags--tag">{{ . }}</span>
@@ -109,9 +109,9 @@
             </div>
         </div>
         <div class="facts__fact">
-            <img src="{{ $.Param "facts_03.img" }}" alt="" class="facts__fact--icon">
-            <h4>{{ $.Param "facts_03.title" }}</h4>
-            <p>{{ $.Param "facts_03.description" }}</p>
+            <img src="{{ .Params.facts_03.img  }}" alt="" class="facts__fact--icon">
+            <h4>{{ .Params.facts_03.title }}</h4>
+            <p>{{ .Params.facts_03.descriptoin }}</p>
             <div class="facts__fact__tags">
                 {{ range .Params.facts_03.tags }}
                 <span class="facts__fact__tags--tag">{{ . }}</span>
