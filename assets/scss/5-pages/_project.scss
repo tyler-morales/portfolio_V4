@@ -90,10 +90,10 @@
         gap: 30px;
 
         &>* {
-            border: 2px dotted red;
+            // border: 2px dotted red;
             // max-width: 80vw;
 
-            @include breakpoint(lightbox) {
+            @include breakpoint(lg) {
                 padding: 60px;
             }
 
