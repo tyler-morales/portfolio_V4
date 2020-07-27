@@ -30,7 +30,7 @@
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="/projects/02_project">
+                <a href="https://peaceful-knuth-debc9a.netlify.app/" target="_blank">
                     <span id="view-project" class="link--view-project">View Project
                         <svg id="arrow-right" class="icon--arrow-right">
                             <use xlink:href="icons/sprite.svg#arrow-right"></use>
@@ -39,19 +39,20 @@
                 </a>
             </div>
             <img src="{{ $.Param "case_study_01.img" }}" class="case-study--img">
+
         </div>
 
         <div class="case-study reverse">
             <div class="case-study__text">
-                <span class="project-type">{{ $.Param "case_study_02.type" }}</span>
-                <h2>{{ .Params.case_study_02.title }}</h2>
-                <h4>{{ $.Param "case_study_02.description" }}</h4>
+                <span class="project-type">{{ $.Param "case_study_01.type" }}</span>
+                <h2>{{ .Params.case_study_01.title }}</h2>
+                <h4>{{ $.Param "case_study_01.description" }}</h4>
                 <div class="case-study__text__tags">
-                    {{ range .Params.case_study_02.tags }}
+                    {{ range .Params.case_study_01.tags }}
                     <span class="case-study__text__tags--tag">{{.}}</span>
                     {{ end }}
                 </div>
-                <a href="/projects/03_project">
+                <a href="/projects/01_project">
                     <span id="view-project" class="link--view-project">View Project
                         <svg id="arrow-right" class="icon--arrow-right">
                             <use xlink:href="icons/sprite.svg#arrow-right"></use>
@@ -72,7 +73,7 @@
             {{ range .Paginator.Pages }}
             <div class="notable-projects__grid__project">
                 <div class="notable-projects__grid__project__image">
-                    <a href="{{.Permalink}}" class="img-hover-zoom img-hover-zoom--colorize">
+                    <a href="{{.Params.Link}}" class="img-hover-zoom img-hover-zoom--colorize" target="_blank">
                         <img src="{{ .Params.thumbnail }}" alt="">
                     </a>
                     <svg class="icon--external-link">
