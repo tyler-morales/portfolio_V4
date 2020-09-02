@@ -78,7 +78,15 @@
 
             &__tags {
                 display: flex;
+                align-items: center;
                 color: var(--color-gray);
+
+                &--tag {
+                    background-color: rgba(0, 0, 0, 0.10);
+                    color: black;
+                    padding: 8px 13px;
+                    border-radius: 15px;
+                }
 
                 &--tag:not(:last-child) {
                     margin-right: 15px;
