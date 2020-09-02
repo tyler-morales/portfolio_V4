@@ -1,11 +1,6 @@
 ---
-title: Text Adventure Game
-date: 2019-9-23
+title: Coutdown Timer
 weight: 2
-thumbnail: images/game-square.jpg
-link: https://google.com
+thumbnail: /images/tik-it.jpg
+# link: tik-it.netlify.app/
 ---
-
-I decided to start learning Go in March 2017.
-
-Follow my journey through this new blog.
